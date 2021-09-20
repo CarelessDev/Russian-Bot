@@ -1,0 +1,31 @@
+{
+  "name": "russian-bot",
+  "version": "1.0.4",
+  "description": "Vladimir",
+  "main": "dist/bot.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "buildinc": "node ./scripts/incrementVersion.js && npm run build",
+    "start": "node --es-module-specifier-resolution=node dist/bot.js",
+    "dev": "npm run buildinc && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarelessDev/Russian-Bot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarelessDev/Russian-Bot/issues"
+  },
+  "homepage": "https://github.com/CarelessDev/Russian-Bot#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.4"
+  }
+}
